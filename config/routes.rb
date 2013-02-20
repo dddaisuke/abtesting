@@ -1,4 +1,6 @@
 Abtesting::Application.routes.draw do
+  match '/vanity(/:action(/:id(.:format)))', :controller=>:vanity
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
