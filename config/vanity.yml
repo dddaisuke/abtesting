@@ -1,0 +1,6 @@
+development:
+  adapter: redis
+  connection: redis://localhost:6379/0
+production:
+  adapter: redis
+  database: redis://redistogo:14034a5c80f1dd092b3c3cdedfba7b29@dory.redistogo.com:9707/0
