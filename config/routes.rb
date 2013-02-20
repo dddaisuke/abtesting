@@ -1,5 +1,12 @@
 Abtesting::Application.routes.draw do
   match '/vanity(/:action(/:id(.:format)))', :controller=>:vanity
+  resources :abtest, only: :index do
+    collection do
+      get :click
+    end
+  end
+
+  root :to => 'abtest#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
